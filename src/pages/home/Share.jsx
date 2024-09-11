@@ -14,7 +14,7 @@ function FileBlockchainWithSignature() {
     const handlePrivateKeyChange = (event) => {
         setPrivateKey(event.target.value)
     }
-
+    // sender code for prcess file ie converting to blockchain
     const processFile = () => {
         if (!file || !privateKey) {
             alert('Please upload a file and provide a private key.')
@@ -78,7 +78,7 @@ function FileBlockchainWithSignature() {
 
         readNextChunk()
     }
-
+    // for reading the file
     const verifyBlockchain = () => {
         if (!file || !privateKey) {
             alert('Please upload a file and provide a private key.')
