@@ -9,7 +9,7 @@ export default function Register() {
         password: '',
         email: '',
         mobile_number: '',
-        login_method: 4
+        login_method: 1
     })
     const [loading, setLoading] = useState(false)
     const userRegister = async () => {

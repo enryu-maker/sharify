@@ -12,7 +12,7 @@ export default function Login() {
     const [data, setData] = useState({
         username: '',
         password: '',
-        login_type: 4,
+        login_type: 1,
         otp: 0
     })
 
@@ -39,6 +39,7 @@ export default function Login() {
             .post('http://127.0.0.1:8000/v1/auth/verify', data)
             .then((res) => {
                 if (res.status === 201) {
+
                     navigate('/dash')
                 }
             })
